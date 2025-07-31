@@ -1,0 +1,281 @@
+{
+  "EmployeeStatuses": [
+    { "Name": "Активен" },
+    { "Name": "На больничном" },
+    { "Name": "В отпуске" }
+  ],
+  "Specializations": [
+    { "Name": "Механик" },
+    { "Name": "Электрик" },
+    { "Name": "Диагност" },
+    { "Name": "Маляр" }
+  ],
+  "Employees": [
+    {
+      "UserName": "ivanov_m",
+      "Email": "emp1@mail.ru",
+      "Password": "qwerty",
+      "RoleIndex": 1,
+      "EmployeeStatusIndex": 0,
+      "LastName": "Иванов",
+      "FirstName": "Михаил",
+      "MiddleName": "Сергеевич",
+      "WorkExperience": 5,
+      "HireDate": "2025-06-10T17:00:00Z"
+    },
+    {
+      "UserName": "petrov_a",
+      "Email": "emp2@mail.ru",
+      "Password": "qwerty",
+      "RoleIndex": 1,
+      "EmployeeStatusIndex": 0,
+      "LastName": "Петров",
+      "FirstName": "Алексей",
+      "MiddleName": "Викторович",
+      "WorkExperience": 3,
+      "HireDate": "2025-06-10T17:00:00Z"
+    }
+  ],
+  "EmployeeSpecializations": [
+    {
+      "EmployeeIndex": 0,
+      "SpecializationIndex": 0
+    },
+    {
+      "EmployeeIndex": 0,
+      "SpecializationIndex": 2
+    },
+    {
+      "EmployeeIndex": 1,
+      "SpecializationIndex": 1
+    }
+  ],
+  "CarBrands": [
+    { "Name": "Toyota" },
+    { "Name": "BMW" },
+    { "Name": "LADA" }
+  ],
+  "CarModels": [
+    {
+      "Name": "Camry",
+      "CarBrandIndex": 0
+    },
+    {
+      "Name": "X5",
+      "CarBrandIndex": 1
+    },
+    {
+      "Name": "Vesta",
+      "CarBrandIndex": 2
+    }
+  ],
+  "Generations": [
+    {
+      "Name": "XV70",
+      "CarModelIndex": 0,
+      "StartYear": 2017,
+      "EndYear": 2025
+    },
+    {
+      "Name": "G05",
+      "CarModelIndex": 1,
+      "StartYear": 2018,
+      "EndYear": 2023
+    },
+    {
+      "Name": "Vesta",
+      "CarModelIndex": 2,
+      "StartYear": 2015,
+      "EndYear": 2025
+    }
+  ],
+  "Vehicles": [
+    {
+      "VIN": "JTNBK46E80J123456",
+      "Year": 2018,
+      "GenerationIndex": 0
+    },
+    {
+      "VIN": "WBACX5100AW123456",
+      "Year": 2019,
+      "GenerationIndex": 1
+    },
+    {
+      "VIN": "XTA218010K1234567",
+      "Year": 2020,
+      "GenerationIndex": 2
+    }
+  ],
+  "Clients": [
+    {
+      "UserName": "sidorov_p",
+      "Email": "client1@mail.ru",
+      "Password": "qwerty",
+      "LastName": "Сидоров",
+      "FirstName": "Павел",
+      "MiddleName": "Игоревич",
+      "DateOfBirth": "1990-06-10T17:00:00Z",
+      "RegistrationDate": "2025-06-10T17:00:00Z"
+    },
+    {
+      "UserName": "kuznetsova_m",
+      "Email": "client2@mail.ru",
+      "Password": "qwerty",
+      "LastName": "Кузнецова",
+      "FirstName": "Мария",
+      "MiddleName": "Алексеевна",
+      "DateOfBirth": "1990-06-10T17:00:00Z",
+      "RegistrationDate": "2025-06-10T17:00:00Z"
+    }
+  ],
+  "Statuses": [
+    {
+      "Id": "11111111-1111-1111-1111-111111111111",
+      "Name": "Открыт"
+    },
+    {
+      "Id": "22222222-2222-2222-2222-222222222222",
+      "Name": "В работе"
+    },
+    {
+      "Id": "33333333-3333-3333-3333-333333333333",
+      "Name": "Завершен"
+    },
+    {
+      "Id": "44444444-4444-4444-4444-444444444444",
+      "Name": "Отменен"
+    }
+  ],
+  "Requests": [
+    {
+      "Reason": "Замена масла и фильтров",
+      "OpenDate": "2025-06-10T17:00:00Z",
+      "CloseDate": null,
+      "ClientIndex": 0,
+      "VehicleIndex": 0,
+      "StatusIndex": 0
+    },
+    {
+      "Reason": "Диагностика подвески",
+      "OpenDate": "2025-06-10T17:00:00Z",
+      "CloseDate": "2026-06-10T17:00:00Z",
+      "ClientIndex": 1,
+      "VehicleIndex": 1,
+      "StatusIndex": 2
+    }
+  ],
+  "Works": [
+    {
+      "Name": "Замена масла",
+      "Description": "Замена моторного масла и масляного фильтра",
+      "Cost": 5000.00
+    },
+    {
+      "Name": "Диагностика подвески",
+      "Description": "Полная диагностика ходовой части",
+      "Cost": 3000.00
+    },
+    {
+      "Name": "Замена тормозных колодок",
+      "Description": "Замена передних тормозных колодок",
+      "Cost": 4000.00
+    }
+  ],
+  "PlannedWorks": [
+    {
+      "PlanDate": "2025-06-10T17:00:00Z",
+      "ExpectedEndDate": "2026-06-10T17:00:00Z",
+      "TotalCost": 5000.00,
+      "WorkIndex": 0,
+      "RequestIndex": 0,
+      "StatusIndex": 1
+    },
+    {
+      "PlanDate": "2025-06-10T17:00:00Z",
+      "ExpectedEndDate": "2026-06-10T17:00:00Z",
+      "TotalCost": 3000.00,
+      "WorkIndex": 1,
+      "RequestIndex": 1,
+      "StatusIndex": 2
+    }
+  ],
+  "PartBrands": [
+    { "Name": "Bosch" },
+    { "Name": "Mann-Filter" },
+    { "Name": "Luk" }
+  ],
+  "Parts": [
+    {
+      "Name": "Масляный фильтр",
+      "Article": "BO-12345",
+      "Cost": 800.00,
+      "PartBrandIndex": 0
+    },
+    {
+      "Name": "Воздушный фильтр",
+      "Article": "MF-67890",
+      "Cost": 1200.00,
+      "PartBrandIndex": 1
+    },
+    {
+      "Name": "Тормозные колодки",
+      "Article": "LK-54321",
+      "Cost": 2500.00,
+      "PartBrandIndex": 2
+    }
+  ],
+  "PlannedWorkEmployees": [
+    {
+      "PlannedWorkIndex": 0,
+      "EmployeeIndex": 0
+    },
+    {
+      "PlannedWorkIndex": 1,
+      "EmployeeIndex": 1
+    }
+  ],
+  "PlannedWorkParts": [
+    {
+      "PlannedWorkIndex": 0,
+      "PartIndex": 0,
+      "Quantity": 1
+    },
+    {
+      "PlannedWorkIndex": 0,
+      "PartIndex": 1,
+      "Quantity": 1
+    },
+    {
+      "PlannedWorkIndex": 1,
+      "PartIndex": 2,
+      "Quantity": 2
+    }
+  ],
+  "TypeOfDays": [
+    { "Name": "Рабочий" },
+    { "Name": "Выходной" },
+    { "Name": "Отпуск" }
+  ],
+  "WorkDays": [
+    {
+      "EmployeeIndex": 0,
+      "TypeOfDayIndex": 0,
+      "StartTime": "09:00",
+      "EndTime": "21:00"
+    },
+    {
+      "EmployeeIndex": 1,
+      "TypeOfDayIndex": 0,
+      "StartTime": "09:00",
+      "EndTime": "23:00"
+    }
+  ],
+  "Diagnostics": [
+    {
+      "DiagnosticsDate": "2025-06-10T17:00:00Z",
+      "ResultDescription": "Обнаружен износ передних рычагов",
+      "EmployeeIndex": 1,
+      "RequestIndex": 1
+    }
+  ]
+}
